@@ -9,23 +9,9 @@
       %a{ :href => "http://www.free-css.com/" }
         %img{ :title => "Genious Web", :src => "images/logo.gif", :border => "0", :height => "58", :alt => "Genious Web", :width => "208" }
       %ul
-        %li.home
-          Home
-        %li
-          %a{ :href => "http://www.free-css.com/" }
-            About us
-        %li
-          %a{ :href => "http://www.free-css.com/" }
-            Support
-        %li
-          %a{ :href => "http://www.free-css.com/" }
-            Clients
-        %li
-          %a{ :href => "http://www.free-css.com/" }
-            ideas
-        %li
-          %a{ :href => "http://www.free-css.com/" }
-            Contact
+        - site.posts.each do |post|
+          %li{:class => "#{'current' if (page.title == post.title)}"}
+            %a{ :href => post.url}= post.title
       %ul.dropdown
         %li
           %a{ :href => "http://www.free-css.com/" }

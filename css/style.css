@@ -11,7 +11,7 @@ ul{list-style-type:none;}
 #topPan ul li a{display:block; width:79px; height:32px; background:url(../images/menubg-normal.gif) 0 0 no-repeat #7E7B00; color:#656565; font-size:11px; font-weight:bold; line-height:32px; text-transform:uppercase; text-align:center; text-decoration:none;}
 #topPan ul li a:hover{background:url(../images/menubg-hover.gif) 0 0 no-repeat #7E7B00; color:#7C7900; text-decoration:none;}
 
-#topPan ul li.home{display:block; width:79px; height:32px; background:url(../images/menubg-hover.gif) 0 0 no-repeat #7E7B00; font-size:11px; font-weight:bold; line-height:32px; color:#7C7900; text-decoration:none; text-transform:uppercase; text-align:center;}
+#topPan ul li.current a {display:block; width:79px; height:32px; background:url(../images/menubg-hover.gif) 0 0 no-repeat #7E7B00; font-size:11px; font-weight:bold; line-height:32px; color:#7C7900; text-decoration:none; text-transform:uppercase; text-align:center;}
 
 #topPan ul.dropdown{width:480px; height:22px; position:absolute; top:119px; right:0px;}
 #topPan ul.dropdown li{float:left; width:79px; height:22px; }
