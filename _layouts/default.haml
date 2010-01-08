@@ -1,13 +1,16 @@
+!!! XML
 !!!
 %html{ :xmlns => "http://www.w3.org/1999/xhtml" }
   %head
-    %title= page.title
-    %meta{ :content => "text/html; charset=iso-8859-1", "http-equiv" => "Content-Type" }
+    %title
+      Retiro Nordestão 2010 - 
+      = page.title
+    %meta{'http-equiv' => 'Content-Type', :content => 'text/html; charset=utf-8'}/
     %link{ :href => "css/style.css", :rel => "stylesheet", :type => "text/css" }
   %body
     #topPan
-      %a{ :href => "http://www.free-css.com/" }
-        %img{ :title => "Genious Web", :src => "images/logo.gif", :border => "0", :height => "58", :alt => "Genious Web", :width => "208" }
+      %a{ :href => '/' }
+        Retiro Nordestão 2010
       %ul
         - site.posts.each do |post|
           %li{:class => "#{'current' if (page.title == post.title)}"}
@@ -29,43 +32,13 @@
       = content
     #footermainPan
       #footerPan
-        %p.html
-          %a{ :href => "http://validator.w3.org/check?uri=referer", :target => "_blank" }
-            html
-        %p.css
-          %a{ :href => "http://jigsaw.w3.org/css-validator/check/referer", :target => "_blank" }
-            css
-        %a{ :href => "http://www.free-css.com/" }
-          %img.footerlogo{ :title => "Genious Web", :src => "images/footer-logo.jpg", :border => "0", :height => "50", :alt => "Genious Web", :width => "186" }
         %ul
           %li
-            %a{ :href => "http://www.free-css.com/" }
-              Home
-            |
-          %li
-            %a{ :href => "http://www.free-css.com/" }
-              About
-            |
-          %li
-            %a{ :href => "http://www.free-css.com/" }
-              Support
-            |
-          %li
-            %a{ :href => "http://www.free-css.com/" }
-              Client
-            |
-          %li
-            %a{ :href => "http://www.free-css.com/" }
-              Ideas
-            |
-          %li
-            %a{ :href => "http://www.free-css.com/" }
-              Contact
-        %p.copyright
-          ©geniousweb. all right reserved.
-        %ul.templateworld
-          %li
-            Design By:
-          %li
-            %a{ :href => "http://www.templateworld.com", :target => "_blank" }
-              Template World
+          - site.posts.each do |post|
+            %li{:class => "#{'current' if (page.title == post.title)}"}
+              %a{ :href => post.url}= post.title
+              |
+        %p.templateworld
+          Design By:
+          %a{ :href => "http://www.templateworld.com", :target => "_blank" }
+            Template World
