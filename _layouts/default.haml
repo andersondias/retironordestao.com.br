@@ -10,7 +10,7 @@
   %body
     #topPan
       %a{ :href => '/' }
-        Retiro Nordestão 2010
+        %img{:src => 'images/retiro_nordestao_logo.png'}
       %ul
         - site.posts.each do |post|
           %li{:class => "#{'current' if (page.title == post.title)}"}

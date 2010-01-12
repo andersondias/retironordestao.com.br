@@ -4,7 +4,8 @@ div, p, ul, h2, h3, img{padding:0px; margin:0px;}
 ul{list-style-type:none;}
 /*----TOP PANEL----*/
 #topPan{width:747px; height:152px; position:relative; margin:0 auto; padding:0px;}
-#topPan img{width:208px; height:58px; position:absolute; top:35px; left:0px;}
+#topPan a {border:0;}
+#topPan img{position:absolute; top:20px; left:0px;}
 
 #topPan ul{width:480px; height:32px; position:absolute; top:76px; right:0px;}
 #topPan ul li{float:left; width:79px; height:32px; padding:0 0 0 1px;}
