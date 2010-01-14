@@ -5,7 +5,7 @@ ul{list-style-type:none;}
 /*----TOP PANEL----*/
 #topPan{width:747px; height:152px; position:relative; margin:0 auto; padding:0px;}
 #topPan a {border:0;}
-#topPan img{position:absolute; top:20px; left:0px;}
+#topPan img{position:absolute; top:20px; left:0px; border:0;}
 
 #topPan ul{width:480px; height:32px; position:absolute; top:76px; right:0px;}
 #topPan ul li{float:left; width:79px; height:32px; padding:0 0 0 1px;}
@@ -33,7 +33,6 @@ ul{list-style-type:none;}
 #bodytopPan .sliderImage img {border: 10px solid #CCC; margin-top: 2px;}
 #bodytopPan h2{background:#F4F4F4; color:#6E6C00; font-size:24px; height:60px; line-height:60px;}
 #bodytopPan p{padding:0 38px 11px 0;}
-#bodytopPan p span{font-weight:bold;}
 #bodytopPan p.more{margin:0 0 15px 618px; padding:0px;}
 #bodytopPan p.more a{display:block;width:79px; height:28px; background:url(../images/button1.gif) 0 0 no-repeat #fff; color:#111; font-size:15px; line-height:28px; text-decoration:none; padding:0 0 0 10px;}
 #bodytopPan p.more a:hover{background:url(../images/button2.gif) 100% 0% no-repeat #fff; color:#111; text-decoration:none;}
