@@ -7,6 +7,7 @@
       = page.title
     %meta{'http-equiv' => 'Content-Type', :content => 'text/html; charset=utf-8'}/
     %link{ :href => "css/style.css", :rel => "stylesheet", :type => "text/css" }
+    %link{ :href => "css/jquery.lightbox-0.5.css", :rel => "stylesheet", :type => "text/css" }
   %body
     #topPan
       %a{ :href => '/' }
@@ -42,3 +43,7 @@
           Design By:
           %a{ :href => "http://www.templateworld.com", :target => "_blank" }
             Template World
+
+    = script_tag 'jquery.js'
+    = script_tag 'jquery.lightbox-0.5.pack.js'
+    = script_tag 'jquery.lightbox.gallery.js'
