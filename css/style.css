@@ -17,6 +17,7 @@ ul{list-style-type:none;}
 #topPan ul.dropdown{width:480px; height:22px; position:absolute; top:119px; right:0px;}
 #topPan ul.dropdown li{float:left; width:79px; height:22px; }
 #topPan ul.dropdown li a{display:block; width:79px;background:url(../images/vertical-dot.gif) 100% 0 no-repeat #fff; color:#3E3E3E; font-size:11px; text-decoration:none; text-align:center; line-height:22px;} 
+#topPan ul.dropdown li.current a {color:#7C7900;}
 #topPan ul.dropdown li a:hover{text-decoration:none; background:url(../images/vertical-dot.gif) 100% 0 no-repeat #fff; color:#7C7900;}
 
 #topPan ul.dropdown li.verticallinenone a{display:block; width:79px;background:#fff; color:#3E3E3E; font-size:11px; text-decoration:none; text-align:center; line-height:22px;} 
