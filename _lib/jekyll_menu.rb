@@ -14,8 +14,12 @@ module Jekyll::Menu
 
   private
   def posts_iterator(posts, &block)
-    posts.each do |post|
-      block.call(post)
+    if block.present?
+      posts.each do |post|
+        block.call(post)
+      end
+    else
+      posts
     end
   end
 end
