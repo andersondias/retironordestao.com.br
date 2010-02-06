@@ -13,22 +13,13 @@
       %a{ :href => '/' }
         = image_tag('retiro_nordestao_logo.png')
       %ul
-        - site.posts.each do |post|
+        - topic_posts do |post|
           %li{:class => "#{'current' if (page.title == post.title)}"}
             %a{ :href => post.url}= post.title
       %ul.dropdown
-        %li
-          %a{ :href => "http://www.free-css.com/" }
-            internal
-        %li
-          %a{ :href => "http://www.free-css.com/" }
-            more info
-        %li
-          %a{ :href => "http://www.free-css.com/" }
-            tips
-        %li.verticallinenone
-          %a{ :href => "http://www.free-css.com/" }
-            purchase
+        - children_posts do |post|
+          %li{:class => "#{'current' if (page.title == post.title)}"}
+            %a{ :href => post.url}= post.title
     #bodyContent
       = content
     #footermainPan
