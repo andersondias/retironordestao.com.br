@@ -6,9 +6,24 @@ module Jekyll::Menu
 
   def children_posts(&block)
     if page.respond_to?(:url)
-      actual_page = page.topics[0] || page.url[1..page.url.size]
       posts = site.posts.select { |p| p.topics.include?(actual_page) }
       posts_iterator(posts, &block)
+    end
+  end
+
+  def current_page_class(post)
+    html = ''
+    if page.title == post.title
+      html = 'current'
+    elsif actual_page == post.slug
+      html = 'current'
+    end
+    html
+  end
+
+  def actual_page
+    if page.respond_to?(:url)
+      page.topics[0] || page.url[1..page.url.size]
     end
   end
 

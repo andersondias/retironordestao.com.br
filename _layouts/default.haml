@@ -14,12 +14,12 @@
         = image_tag('retiro_nordestao_logo.png')
       %ul
         - topic_posts do |post|
-          %li{:class => "#{'current' if (page.title == post.title)}"}
+          %li{:class => current_page_class(post)}
             %a{ :href => post.url}= post.title
       - if children_posts && !children_posts.empty?
         %ul.dropdown
           - children_posts do |post|
-            %li{:class => "#{'current' if (page.title == post.title)}"}
+            %li
               %a{ :href => post.url}= post.title
     #bodyContent
       = content
