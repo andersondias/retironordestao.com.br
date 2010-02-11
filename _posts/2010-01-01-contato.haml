@@ -1,15 +1,128 @@
 ---
-layout: default
+layout: subpage
 title: Contato
+subtitle: Fale conosco!
 ---
 
-#bodymainmiddlePan
-  #bodymiddlePan
-    %script(type="text/javascript" src="http://www.formspring.com/forms/js.php?801313-Xx1tMbECUj-v2")
-    %noscript
-      %a(href="http://www.formspring.com/forms/?801313-Xx1tMbECUj" title="Online Form")
-        Online Form - Contato - Retiro Nordestão
-    %div(style="text-align:right; font-size:x-small;")
-      %a(href="http://www.formspring.com/" title="Online Form Generator")
-        FormSpring - Online Form Generator"
+#content
+  .inner
+    .clearfix
+      %h2 Contato
+      %p Deixe sua mensagem ou tire suas dúvidas preenchendo o formulário abaixo, logo entraremos em contato com você.
 
+      %link{ :href => "http://www.formspring.com/forms/css/2/form.css", :rel => "stylesheet", :type => "text/css" }
+      %link{ :href => "http://www.formspring.com/forms/css/2/none.css", :rel => "stylesheet", :type => "text/css" }
+      /
+        [if IE 6]>
+        <link rel="stylesheet" type="text/css" href="http://www.formspring.com/forms/css/2/ie6fixes.css" />
+        <![endif]
+      %script{ :src => "http://www.formspring.com/forms/js/2/yui.js", :type => "text/javascript" }
+      %script{ :src => "http://www.formspring.com/forms/js/2/scripts.js", :type => "text/javascript" }
+      %form#fsForm801313.fsForm.fsFormFree.fsSingleColumn{ :action => "http://www.formspring.com/forms/index.php", :method => "post" }
+        %input{ :name => "form", :type => "hidden", :value => "801313" }
+        %input{ :name => "viewkey", :type => "hidden", :value => "Xx1tMbECUj" }
+        %input{ :name => "unique_key", :type => "hidden", :value => "9752bad5893e82a2f8a33c8fcd067afe" }
+        %input{ :name => "password", :type => "hidden", :value => "" }
+        %input#hidden_fields801313{ :name => "hidden_fields", :type => "hidden", :value => "" }
+        %input#session_id801313{ :name => "fspublicsession", :type => "hidden", :value => "i7bbjbl9j4r6f3gnlb922remo0" }
+        %input#incomplete801313{ :name => "incomplete", :type => "hidden", :value => "" }
+        %input#referrer801313{ :name => "referrer", :type => "hidden", :value => "http://retironordestao.tink.com.br/contato" }
+        %input#referrer_type801313{ :name => "referrer_type", :type => "hidden", :value => "js" }
+        %input{ :name => "_submit", :type => "hidden", :value => "1" }
+        #requiredFieldsError{ :style => "display: none;" }
+          Insira um valor válido para todos os campos exigidos.
+        #resumeConfirm{ :style => "display: none;" }
+          Tem certeza de que deseja fechar este formulário e continuar depois?
+        #fileTypeAlert{ :style => "display: none;" }
+          Deve carregar um dos tipos de arquivos a seguir para o campo selecionado:
+        #embedError{ :style => "display: none;" }
+          Aconteceu um erro na apresentação do formulário. Copie e cole novamente o código de inserção.
+        #fsPage801313-1.fsPage
+          %table#fsSection7927238.fsSection.fsTable{ :cellspacing => "0", :cellpadding => "0" }
+            %tbody
+              %tr.fsRowTop{ :valign => "top" }
+                %td.fsRowOpen
+                  \&nbsp;
+                %td.fsRowBody{ :colspan => "1" }
+                %td.fsRowClose
+                  \&nbsp;
+              %tr#fsRow801313-2.fsRow.fsFieldRow.fsLastRow{ :valign => "top", :style => "" }
+                %td.fsRowOpen
+                  \&nbsp;
+                %td#fsCell7927239.fsRowBody.fsCell.fsFieldCell.fsFirst.fsLast.fsLabelVertical{ :colspan => "1" }
+                  %label.fsLabel.fsRequiredLabel{ :for => "field7927239" }
+                    Nome
+                    %span
+                      *
+                  %input#field7927239.fsField.fsRequired.contact-text{ :name => "field7927239", :size => "50", :type => "text", :value => "", :maxlength => "200" }
+                %td.fsRowClose
+                  \&nbsp;
+              %tr#fsRow801313-3.fsRow.fsFieldRow.fsLastRow{ :valign => "top", :style => "" }
+                %td.fsRowOpen
+                  \&nbsp;
+                %td#fsCell7927243.fsRowBody.fsCell.fsFieldCell.fsFirst.fsLast.fsLabelVertical{ :colspan => "1" }
+                  %label.fsLabel.fsRequiredLabel{ :for => "field7927243" }
+                    E-mail
+                    %span
+                      *
+                  %input#field7927243.fsField.fsFormatEmail.fsRequired.contact-text{ :name => "field7927243", :size => "50", :type => "text", :value => "" }
+                %td.fsRowClose
+                  \&nbsp;
+              %tr#fsRow801313-4.fsRow.fsFieldRow.fsLastRow{ :valign => "top", :style => "" }
+                %td.fsRowOpen
+                  \&nbsp;
+                %td#fsCell7927241.fsRowBody.fsCell.fsFieldCell.fsFirst.fsLast.fsLabelVertical{ :colspan => "1" }
+                  %label.fsLabel{ :for => "field7927241" }
+                    Telefone para contato
+                  %input#field7927241.fsField.fsFormatPhoneXX.contact-text{ :name => "field7927241", :size => "16", :type => "text", :value => "" }
+                %td.fsRowClose
+                  \&nbsp;
+              %tr#fsRow801313-5.fsRow.fsFieldRow.fsLastRow{ :valign => "top", :style => "" }
+                %td.fsRowOpen
+                  \&nbsp;
+                %td#fsCell7927244.fsRowBody.fsCell.fsFieldCell.fsFirst.fsLast.fsLabelVertical{ :colspan => "1" }
+                  %label.fsLabel.fsRequiredLabel{ :for => "field7927244" }
+                    Mensagem
+                    %span
+                      *
+                  %textarea#field7927244.fsField.fsRequired.contact-textarea{ :name => "field7927244", :rows => "10", :cols => "50" }
+                %td.fsRowClose
+                  \&nbsp;
+              %tr.fsSpacerRow{ :valign => "top" }
+                %td.fsRowOpen
+                  \&nbsp;
+                %td.fsRowBody{ :colspan => "1" }
+                %td.fsRowClose
+                  \&nbsp;
+              %tr.fsRowBottom{ :valign => "top" }
+                %td.fsRowOpen
+                  \&nbsp;
+                %td.fsRowBody{ :colspan => "1" }
+                %td.fsRowClose
+                  \&nbsp;
+        #fsSubmit801313.fsSubmit.fsPagination
+          %input#fsSubmitButton801313.fsSubmitButton.contact-submit{ :type => "submit", :value => "", :onclick => "form801313.submitForm(); return false;" }
+        %script{ :type => "text/javascript" }
+          var form801313;
+          var form801313Load = function() {
+          
+          form801313 = new FSForm(801313);
+          
+          form801313.logicFields = [];
+          
+          form801313.calcFields = [];
+          form801313.lastPage = 1;
+          form801313.init();
+          };
+          
+          var oldonload801313 = window.onload;
+          window.onload = typeof window.onload == 'function' ?
+          function() { oldonload801313(); form801313Load(); } :
+          window.onload = form801313Load;
+      %noscript
+        \&lt;a href="http://www.formspring.com/forms/?801313-Xx1tMbECUj" title="Online Form"&gt;
+        Online Form - Contato - Retiro Nordestão
+        \&lt;/a&gt;
+      %div{ :style => "text-align: right; font-size: x-small;" }
+        %a{ :href => "http://www.formspring.com/", :title => "Online Form Generator" }
+          FormSpring - Online Form Generator"

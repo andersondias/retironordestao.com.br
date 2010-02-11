@@ -1,0 +1,36 @@
+div#header {
+	background: url('../images/theme/green/bg-header.png') repeat-x center top;
+}
+
+div#header-sub {
+	background: url('../images/theme/green/bg-header-subpage.png') repeat-x center top;
+}
+
+li.drop {
+	background: url('../images/theme/green/nav-arrow.png') no-repeat;
+	background-position: 0px 13px;
+}
+
+a {
+	color: #485e4c;
+}
+
+#nav a:link, #nav a:active, #nav a:visited{
+    color: #c7dac8;
+ }
+ 
+ #nav li.current a {
+	color: #fff;
+}
+
+#nav li.current ul a{
+    color: #c7dac8;
+}
+
+#nav a:hover{
+   color: #fff;
+}
+
+#nav li.current ul a:hover{
+    color: #fff;
+}

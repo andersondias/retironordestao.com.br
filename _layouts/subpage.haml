@@ -11,8 +11,8 @@
     = css_tag 'jquery.jcarousel.css'
     = css_tag 'jquery.lightbox-0.5.css'
     = css_tag 'clients_slider.css'
-  %body#homepage
-    #header
+  %body#subpage
+    #header-sub
       #top
         %img.logo(src="images/theme/green/logo.png" alt="JustLikeOldTimes")
         #navigation
@@ -25,7 +25,9 @@
                     - children_posts(post) do |children_post|
                       %li
                         %a{ :href => children_post.url }= children_post.title
-      = content
+      #middle-sub
+        %h1= page.subtitle
+    = content
     = script_tag 'jquery.js'
     = script_tag 'jquery.lightbox-0.5.pack.js'
     = script_tag 'jquery.lightbox.gallery.js'

@@ -2,30 +2,37 @@
 layout: default
 title: Local
 ---
-#bodytopmainPan
-  #bodytopPan
-    .sliderDescription
+
+#middle
+  #m-left
+    #slogan
       :markdown
-        ##Diversão
+        # Diversão
         O **Mardunas** oferece uma ótima estrutura para os participantes do retiro!
 
         Parque aquático, ótimos dormitórios climatizados, um amplo refeitório, campos de futebol e vôlei, salão de jogos e tudo isto em frente à **lagoa do Bonfim**!
-    .sliderImage
-      = image_tag('content/pulando_na_lagoa.jpg')
-#bodymainmiddlePan
-  #bodymiddlePan
-    :markdown
-      ## Local
-      Pelo terceiro ano o evento irá ser realizado no **Mardunas Centro de Eventos**.
+  #featured
+    .slideshow
+      %img(alt="Featured Work" width="420" height="270" src="images/theme/featured/01.jpg")
+      %img(alt="Featured Work" width="420" height="270" src="images/theme/featured/02.jpg")
+      %img(alt="Featured Work" width="420" height="270" src="images/theme/featured/03.jpg")
+#content
+  .inner
+    .panel
+      %h2 Local
+      .line
+      :markdown
+        Pelo terceiro ano o evento irá ser realizado no **Mardunas Centro de Eventos**.  
 
-      Localizado na Lagoa do Bonfim, aproximadamente 30 minutos da cidade de Natal/RN, o Mardunas possui uma excelente estrutura que está pronta para receber mais de 800 participantes no evento.
-
-    %h3 Como chegar:
-    = image_tag('content/mardunas_mapa.gif')
-
-    %h3 Fotos do local
-    #gallery
-      - %w(diversao diversao_lagoa dormitorio_externo piscina refeitorio refeitorio_entrada refeitorio_mesas).each do |image|
-        %a{ :href => "images/content/mardunas_#{image}.jpg" }
-          = image_tag("content/mardunas_#{image}_thumb.jpg", :width => 72, :height => 72)
-
+        Localizado na Lagoa do Bonfim, aproximadamente 30 minutos da cidade de Natal/RN, o Mardunas possui uma excelente estrutura que está pronta para receber mais de 800 participantes no evento.
+    .panel
+      %h2 Como chegar
+      .line
+      = image_tag('content/mardunas_mapa.gif', :width => '280px')
+    .panel.plast
+      %h2 Fotos do local:
+      .line
+      #gallery
+        - %w(diversao diversao_lagoa dormitorio_externo piscina refeitorio refeitorio_entrada refeitorio_mesas).each do |image|
+          %a{ :href => "images/content/mardunas_#{image}.jpg" }
+            = image_tag("content/mardunas_#{image}_thumb.jpg", :width => 72, :height => 72)

@@ -1,0 +1,34 @@
+/* IE PNGFIX */
+
+img {
+	behavior: url('iepngfix.htc');
+}
+
+div#middle, div#middle-sub, div#featured {
+	behavior: url('iepngfix.htc');
+}
+
+.jcarousel-skin-tango .jcarousel-prev-horizontal {
+	behavior: url('iepngfix.htc');
+}
+
+.jcarousel-skin-tango .jcarousel-next-disabled-horizontal {
+	behavior: url('iepngfix.htc');
+}
+
+.jcarousel-skin-tango .jcarousel-next-horizontal {
+	behavior: url('iepngfix.htc');
+}
+
+.jcarousel-skin-tango .jcarousel-prev-disabled-horizontal {
+	behavior: url('iepngfix.htc');
+}
+
+
+div#middle div#m-left {
+	margin-left: 7px;
+}
+
+div#content div.box {
+	margin-right: 25px;
+}

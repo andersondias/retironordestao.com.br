@@ -4,10 +4,13 @@ module Jekyll::Menu
     posts_iterator(posts, &block)
   end
 
-  def children_posts(&block)
+  def children_posts(post = nil, &block)
+    actual_post = post ? post.slug : actual_page
     if page.respond_to?(:url)
-      posts = site.posts.select { |p| p.topics.include?(actual_page) }
+      posts = site.posts.select { |p| p.topics.include?(actual_post) }
       posts_iterator(posts, &block)
+    else
+      []
     end
   end
 
@@ -17,6 +20,9 @@ module Jekyll::Menu
       html = 'current'
     elsif actual_page == post.slug
       html = 'current'
+    end
+    unless children_posts(post).empty?
+      html += ' drop'
     end
     html
   end
