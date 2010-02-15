@@ -78,6 +78,7 @@ div#content {
 	text-align: center;
 	line-height: 26px;
 	background: url('../images/theme/default/bg-content.png') repeat-x center top;
+  min-height: 200px;
 }
 
 div#content div.inner {

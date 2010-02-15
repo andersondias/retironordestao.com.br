@@ -28,6 +28,18 @@
       #middle-sub
         %h1= page.subtitle
     = content
+    .clear
+    #footer
+      .inner
+        .left
+          Copyright 2009-2010 Retiro Nordestão.
+        .right
+          %ul
+            - topic_posts do |post|
+              %li
+                %a{ :href => post.url}= post.title
+          .clear
+      .clear
     = script_tag 'jquery.js'
     = script_tag 'jquery.lightbox-0.5.pack.js'
     = script_tag 'jquery.lightbox.gallery.js'
