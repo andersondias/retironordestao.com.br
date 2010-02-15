@@ -3,6 +3,10 @@
 	margin: 0px;
 }
 
+p {
+  margin-bottom: 15px;
+}
+
 body {
 	background: #eeecdb url('../images/theme/default/background.png');
 	font-family: "Georgia", "Times New Roman", "Arial";

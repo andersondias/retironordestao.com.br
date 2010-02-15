@@ -26,14 +26,27 @@
                       %li
                         %a{ :href => children_post.url }= children_post.title
       = content
+    .clear
+    #footer
+      .inner
+        .left
+          Copyright 2009-2010 Retiro Nordestão.
+        .right
+          %ul
+            - topic_posts do |post|
+              %li
+                %a{ :href => post.url}= post.title
+          .clear
+      .clear
     = script_tag 'jquery.js'
     = script_tag 'jquery.lightbox-0.5.pack.js'
     = script_tag 'jquery.lightbox.gallery.js'
+
     = script_tag 'cufon-yui.js'
     = script_tag 'fonts/chunk_400.font.js'
     = script_tag 'fonts/goundy-bookletter_400.font.js'
     = script_tag 'fonts/sorts-mill-goudy_500.font.js'
     = script_tag 'init_cufon.js'
+
     = script_tag 'jquery.cycle.all.js'
     = script_tag 'init_slideshow.js'
-    = script_tag 'index.loadcarousel.js'
