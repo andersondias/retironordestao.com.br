@@ -1,0 +1,33 @@
+/* section spacing */
+
+.fsRowOpen, .fsRowClose, .fsRowBottom .fsRowBody, .fsRowTop .fsRowBody, .fsTable {
+	background-image: none;
+}
+
+.fsSectionRow td.fsRowBody {
+	background-image: none;
+}
+
+.fsForm .fsTable {
+	margin: 0;
+	padding: 0;
+}
+
+td.fsRowBody { 
+    background-color:inherit;
+}
+
+/* 
+being extra aggressive with the row hiding to 
+accomodate IE and some extra whitespace between
+section tables
+*/
+
+.fsForm .fsRowBottom, 
+.fsForm .fsRowBottom *
+{
+	display: none;
+	padding:0;
+	margin:0;
+}
+

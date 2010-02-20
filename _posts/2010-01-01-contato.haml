@@ -50,8 +50,7 @@ subtitle: Fale conosco!
       %h2 Contato
       %p Deixe sua mensagem ou tire suas dúvidas preenchendo o formulário abaixo, logo entraremos em contato com você.
 
-      %link{ :href => "http://www.formspring.com/forms/css/2/form.css", :rel => "stylesheet", :type => "text/css" }
-      %link{ :href => "http://www.formspring.com/forms/css/2/none.css", :rel => "stylesheet", :type => "text/css" }
+      = juice_css ['formspring/form', 'formspring/none'], 'formspring'
       /
         [if IE 6]>
         <link rel="stylesheet" type="text/css" href="http://www.formspring.com/forms/css/2/ie6fixes.css" />
