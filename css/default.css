@@ -294,6 +294,10 @@ div#sidebar p {
 	margin-bottom: 0px;
 }
 
+div#sidebar div.line {
+  width: 259px;
+}
+
 div#content div.box {
 	width: 290px;
 	float: left;
@@ -598,9 +602,9 @@ div#clients h2 {
 
 h3 {
 	color: #2c2927;
-	font-size: 20px;
+	font-size: 18px;
 	font-weight: bold;
-	margin: 0px 0px 8px 0px
+	margin: 8px 0px 8px 0px
 }
 
 h4 {
