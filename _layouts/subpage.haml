@@ -6,11 +6,7 @@
       Retiro Nordestão 2010 - 
       = page.title
     %meta{'http-equiv' => 'Content-Type', :content => 'text/html; charset=utf-8'}/
-    = css_tag 'default.css'
-    = css_tag 'green.css'
-    = css_tag 'jquery.jcarousel.css'
-    = css_tag 'jquery.lightbox-0.5.css'
-    = css_tag 'clients_slider.css'
+    = juice_css ['default', 'green', 'jquery.jcarousel', 'jquery.lightbox-0.5', 'clients_slider']
   %body#subpage
     #header-sub
       #top
@@ -40,15 +36,4 @@
                 %a{ :href => post.url}= post.title
           .clear
       .clear
-    = script_tag 'jquery.js'
-    = script_tag 'jquery.lightbox-0.5.pack.js'
-    = script_tag 'jquery.lightbox.gallery.js'
-
-    = script_tag 'cufon-yui.js'
-    = script_tag 'fonts/chunk_400.font.js'
-    = script_tag 'fonts/goundy-bookletter_400.font.js'
-    = script_tag 'fonts/sorts-mill-goudy_500.font.js'
-
-    = script_tag 'init_cufon.js'
-    = script_tag 'jquery.cycle.all.js'
-    = script_tag 'init_slideshow.js'
+    = juice_js ['jquery', 'jquery.lightbox-0.5.pack', 'jquery.lightbox.gallery', 'cufon-yui', 'fonts/chunk_400.font', 'fonts/goundy-bookletter_400.font', 'fonts/sorts-mill-goudy_500.font', 'init_cufon', 'jquery.cycle.all', 'init_slideshow']

@@ -3,6 +3,10 @@ require 'action_view'
 module TagHelpers
   include ActionView::Helpers::TagHelper
 
+  def assets
+    "http://retironordestao.tink.com.br"
+  end
+
   def css_tag(href, options = {})
     options[:rel] ||= 'stylesheet'
     options[:type] ||= 'text/css'
