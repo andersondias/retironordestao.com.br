@@ -1,0 +1,22 @@
+---
+layout: subpage
+title: Fotos
+subtitle: Momentos que marcaram
+---
+
+#content
+  .inner
+    .gallery.clearfix
+      .tabs
+        .left
+          %h2 Fotos
+        .right
+          %ul
+            - topic_posts do |post|
+              - if post.title == 'Fotos'
+                - children_posts(post) do |children_post|
+                  %li{:class => (page.url == children_post.url) ? 'current' : ''}
+                    %a{ :href => children_post.url }
+                      %span= children_post.title
+      .line-wide.line-p
+      = content

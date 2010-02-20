@@ -1,25 +1,8 @@
 ---
-layout: subpage
-title: Fotos
-subtitle: Momentos que marcaram
+layout: photos
 ---
 
-#content
-  .inner
-    .gallery.clearfix
-      .tabs
-        .left
-          %h2 Fotos
-        .right
-          %ul
-            - topic_posts do |post|
-              - if post.title == 'Fotos'
-                - children_posts(post) do |children_post|
-                  %li{:class => current_page_class(children_post)}
-                    %a{ :href => children_post.url }
-                      %span= children_post.title
-      .line-wide.line-p
-      :markdown
-        ##Você tem fotos que não estão aqui?
-        Ajude-nos a construir nosso mural de fotos nos enviando as suas.
-        Para nos ajudar basta enviar um email para andersondaraujo@gmail.com e em breve suas fotos estarão no nosso site!
+:markdown
+  ##Você tem fotos que não estão aqui?
+  Ajude-nos a construir nosso mural de fotos nos enviando as suas.
+  Para nos ajudar basta enviar um email para fotos@retironordestao.com.br e em breve suas fotos estarão no nosso site!
