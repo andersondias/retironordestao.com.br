@@ -28,7 +28,7 @@ module TagHelpers
 
   private
   def static_url(base_url)
-    path = File.join("#{File.expand_path(File.dirname(__FILE__))}", base_url)
+    path = File.join("#{File.expand_path(File.dirname(__FILE__))}", '..', base_url)
     if assets
       prefix = assets.split(',')
       base_url = prefix[rand(prefix.size)] + base_url
