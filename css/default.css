@@ -30,7 +30,7 @@ div#top {
 }
 
 img.logo {
-	float: left;
+  border:0;
 }
 
 div#middle {

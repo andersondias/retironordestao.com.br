@@ -10,7 +10,7 @@
   %body#homepage
     #header
       #top
-        %img.logo(src="images/theme/green/logo.png" alt="JustLikeOldTimes")
+        %a(href='/')= image_tag 'theme/green/logo.png', :class => 'logo', :alt => 'Retiro Nordestão 2010'
         #navigation
           %ul#nav
             - topic_posts do |post|
