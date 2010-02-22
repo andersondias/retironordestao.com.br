@@ -59,7 +59,7 @@ body#FSLocal.templateThumbnailPreview #fsHeaderImage
 {
     width:150px;
     height:50px;
-    background:url(../../images/2/formspringLogo.png) no-repeat center center;
+    background:url(http://www.formspring.com/forms/images/2/stockTemplates/formspringLogo.png) no-repeat center center;
     display:block;
 }
 
@@ -231,19 +231,19 @@ td.fsRowBody
 .fsCalloutTop
 {
     padding-top:21px;
-    background:url(../../images/2/calloutTop.png) no-repeat left top;
+    background:url(http://www.formspring.com/forms/images/2/stockTemplates/calloutTop.png) no-repeat left top;
 }
 
 .fsCalloutBottom
 {
     height:15px;
-    background:url(../../images/2/calloutBottom.png) no-repeat left bottom;
+    background:url(http://www.formspring.com/forms/images/2/stockTemplates/calloutBottom.png) no-repeat left bottom;
 }
 
 .fsCalloutBody
 {
     padding:3px 12px 4px 16px;
-    background:url(../../images/2/calloutBody.png) repeat-y left center;
+    background:url(http://www.formspring.com/forms/images/2/stockTemplates/calloutBody.png) repeat-y left center;
     color:#fff;
     text-shadow:0 1px 1px #000;
 }
@@ -331,7 +331,7 @@ td.fsRowBody
 
 .fsFieldFocused
 {
-    background-image:url(../../images/2/fieldFocusedBG.png);
+    background-image:url(http://www.formspring.com/forms/images/2/stockTemplates/fieldFocusedBG.png);
 }
 .fsFieldFocused div.fsSupporting,.fsFieldFocused label.fsRequiredLabel span {
     color:#000;
@@ -380,7 +380,7 @@ td.fsRowBody
     text-decoration:none;
     color:#333;
     text-shadow:0 1px 0 #fff;
-    background:url(../../images/2/buttonBG.png);
+    background:url(http://www.formspring.com/forms/images/2/stockTemplates/buttonBG.png);
     line-height:25px;
     margin:18px auto;
 }
@@ -391,7 +391,7 @@ td.fsRowBody
 {
     border:1px solid #999;
     background-color:#fff;
-    background-image:url(../../images/2/fieldbg.png);
+    background-image:url(http://www.formspring.com/forms/images/2/fieldbg.png);
     background-repeat:repeat-x;
     background-position:top left;
     border-top:1px solid #7c7c7c;
@@ -471,7 +471,7 @@ td.fsRowBody
 /* @group Drop Shadow & Section Gradient */
 .fsSectionRow td.fsRowBody
 {
-    background-image:url(../../images/2/stockTemplates/tableTopGradient.png);
+    background-image:url(http://www.formspring.com/forms/images/2/stockTemplates/tableTopGradient.png);
     background-repeat:repeat-x;
     background-position:left top;
     padding-top:18px;
@@ -496,12 +496,12 @@ td.fsRowOpen,td.fsRowClose
 
 .fsRowOpen
 {
-    background:url(../../images/2/stockTemplates/tableBodyLeft.png) top right repeat-y;
+    background:url(http://www.formspring.com/forms/images/2/stockTemplates/tableBodyLeft.png) top right repeat-y;
 }
 
 .fsRowClose
 {
-    background:url(../../images/2/stockTemplates/tableBodyRight.png) top left repeat-y;
+    background:url(http://www.formspring.com/forms/images/2/stockTemplates/tableBodyRight.png) top left repeat-y;
 }
 
 .fsRowBody
@@ -511,32 +511,32 @@ td.fsRowOpen,td.fsRowClose
 
 .fsRowTop .fsRowOpen
 {
-    background:url(../../images/2/stockTemplates/tableTopLeft.png) right bottom no-repeat;
+    background:url(http://www.formspring.com/forms/images/2/stockTemplates/tableTopLeft.png) right bottom no-repeat;
 }
 
 .fsRowTop .fsRowBody
 {
-    background:url(../../images/2/stockTemplates/tableTopMiddle.png) left bottom repeat-x;
+    background:url(http://www.formspring.com/forms/images/2/stockTemplates/tableTopMiddle.png) left bottom repeat-x;
 }
 
 .fsRowTop .fsRowClose
 {
-    background:url(../../images/2/stockTemplates/tableTopRight.png) left bottom no-repeat;
+    background:url(http://www.formspring.com/forms/images/2/stockTemplates/tableTopRight.png) left bottom no-repeat;
 }
 
 .fsRowBottom .fsRowOpen
 {
-    background:url(../../images/2/stockTemplates/tableBottomLeft.png) right top no-repeat;
+    background:url(http://www.formspring.com/forms/images/2/stockTemplates/tableBottomLeft.png) right top no-repeat;
 }
 
 .fsRowBottom .fsRowClose
 {
-    background:url(../../images/2/stockTemplates/tableBottomRight.png) left top no-repeat;
+    background:url(http://www.formspring.com/forms/images/2/stockTemplates/tableBottomRight.png) left top no-repeat;
 }
 
 .fsRowBottom .fsRowBody
 {
-    background:url(../../images/2/stockTemplates/tableBottomMiddle.png) repeat-x left top;
+    background:url(http://www.formspring.com/forms/images/2/stockTemplates/tableBottomMiddle.png) repeat-x left top;
 }
 
 .fsNoShadow .fsRowOpen, .fsNoShadow .fsRowClose, .fsNoShadow .fsRowBottom .fsRowBody, .fsNoShadow .fsRowTop .fsRowBody {
@@ -590,7 +590,7 @@ td.fsValidationError
 {
     color:#ba0000;
     padding-left:20px;
-    background-image:url(../../images/2/validationAlert.png);
+    background-image:url(http://www.formspring.com/forms/images/2/validationAlert.png);
     background-repeat:no-repeat;
     background-position:left bottom;
 }
@@ -720,7 +720,7 @@ td.fsValidationError
 	width: 75px;
 	height: 68px;
 	float: left;
-    background:url(../../images/2/confirmationCheckmark.png);
+    background:url(http://www.formspring.com/forms/images/2/confirmationCheckmark.png);
 }
 
 .fsBlankSection { display:none; }
@@ -753,10 +753,10 @@ td.fsValidationError
 }
 
 .fsMatrixCol1 {
-	background:url(../../images/2/black_translucent.png);
+	background:url(http://www.formspring.com/forms/images/2/black_translucent.png);
 }
 .fsMatrixCol2, .fsMatrixLabel {
-	background:url(../../images/2/white_translucent.png);
+	background:url(http://www.formspring.com/forms/images/2/white_translucent.png);
 }
 
 .fsCurrency
@@ -769,7 +769,7 @@ td.fsValidationError
 
 .fsSliderBg {
     position: relative;    
-    background: url(../../images/2/slider-bg.gif) no-repeat 5px 0;
+    background: url(http://www.formspring.com/forms/images/2/slider-bg.gif) no-repeat 5px 0;
     height: 28px;
     width: 108px;
     float:left;

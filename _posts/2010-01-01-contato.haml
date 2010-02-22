@@ -55,8 +55,6 @@ subtitle: Fale conosco!
         [if IE 6]>
         <link rel="stylesheet" type="text/css" href="http://www.formspring.com/forms/css/2/ie6fixes.css" />
         <![endif]
-      %script{ :src => "http://www.formspring.com/forms/js/2/yui.js", :type => "text/javascript" }
-      %script{ :src => "http://www.formspring.com/forms/js/2/scripts.js", :type => "text/javascript" }
       %form#fsForm801313.fsForm.fsFormFree.fsSingleColumn{ :action => "http://www.formspring.com/forms/index.php", :method => "post" }
         %input{ :name => "form", :type => "hidden", :value => "801313" }
         %input{ :name => "viewkey", :type => "hidden", :value => "Xx1tMbECUj" }
@@ -165,3 +163,4 @@ subtitle: Fale conosco!
       %div{ :style => "text-align: right; font-size: x-small;" }
         %a{ :href => "http://www.formspring.com/", :title => "Online Form Generator" }
           FormSpring - Online Form Generator"
+= juice_js ['formspring/yui', 'formspring/scripts'], 'formspring'
