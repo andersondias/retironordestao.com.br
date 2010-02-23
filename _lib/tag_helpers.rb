@@ -4,7 +4,8 @@ module TagHelpers
   include ActionView::Helpers::TagHelper
 
   def assets
-    "http://retironordestao.tink.com.br"
+    #"http://retironordestao.tink.com.br"
+    nil
   end
 
   def css_tag(href, options = {})
