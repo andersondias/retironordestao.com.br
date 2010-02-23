@@ -20,7 +20,7 @@ class Juicer
 
   def merge_files
     unless there_is_bundle_for?(bundle_complete_path)
-      `juicer merge #{files_paths} -o #{bundle_complete_path} -h #{assets} -l #{assets} --document-root #{Dir.pwd} --ignore-problems --force`
+      `juicer merge #{files_paths} -o #{bundle_complete_path} #{' -h ' + assets if assets} #{' -l ' + assets if assets} --document-root #{Dir.pwd} --ignore-problems --force`
     end
     bundle_path
   end
