@@ -71,6 +71,12 @@ div.slideshow {
 	margin: 41px 0px 0px 35px;
 	position: relative;
 	z-index: 1;
+  height: 270px;
+  width: 420px;
+}
+
+div.slideshow img {
+  display:none;
 }
 
 div#content {
