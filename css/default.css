@@ -85,7 +85,6 @@ div#content {
 	text-align: center;
 	line-height: 26px;
 	background: url('../images/theme/default/bg-content.png') repeat-x center top;
-  min-height: 200px;
 }
 
 div#content div.inner {
@@ -166,6 +165,8 @@ div#footer {
 	font-size: 14px;
 	color: #e4e2d2;
 	margin-top: 70px;
+  position:absolute;
+  bottom:-1px;
 }
 
 div#footer div.inner {
