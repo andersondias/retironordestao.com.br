@@ -11,21 +11,21 @@
     %meta{:name => 'Keywords', :content => 'retiro, retiro nordestão, nordeste, comunhão, jesus, deus, espírito santo, amor, unidade, semelhança de jesus'}
     = juice_css ['default', 'green', 'jquery.jcarousel', 'jquery.lightbox-0.5', 'clients_slider']
   %body#homepage
-    #header
-      #top
-        %a(href='/')= image_tag 'theme/green/logo.png', :class => 'logo', :alt => 'Retiro Nordestão 2010'
-        #navigation
-          %ul#nav
-            - topic_posts do |post|
-              %li{:class => current_page_class(post)}
-                %a{ :href => post.url}= post.title
-                - unless children_posts(post).empty?
-                  %ul
-                    - children_posts(post) do |children_post|
-                      %li
-                        %a{ :href => children_post.url }= children_post.title
-      = content
-    .clear
+    #content
+      #header
+        #top
+          %a(href='/')= image_tag 'theme/green/logo.png', :class => 'logo', :alt => 'Retiro Nordestão 2010'
+          #navigation
+            %ul#nav
+              - topic_posts do |post|
+                %li{:class => current_page_class(post)}
+                  %a{ :href => post.url}= post.title
+                  - unless children_posts(post).empty?
+                    %ul
+                      - children_posts(post) do |children_post|
+                        %li
+                          %a{ :href => children_post.url }= children_post.title
+        = content
     #footer
       .inner
         .left

@@ -30,6 +30,7 @@ div#top {
 }
 
 img.logo {
+  float:left;
   border:0;
   padding-top:3px;
 }
@@ -79,12 +80,24 @@ div.slideshow img {
   display:none;
 }
 
+html, body {
+   margin:0;
+   padding:0;
+   height:100%;
+}
+
+#container {
+   min-height:100%;
+   position:relative;
+}
+
 div#content {
 	width: 100%;
 	color: #574e48;
 	text-align: center;
 	line-height: 26px;
 	background: url('../images/theme/default/bg-content.png') repeat-x center top;
+  padding-bottom: 130px;
 }
 
 div#content div.inner {
@@ -160,13 +173,15 @@ div#clients {
 
 div#footer {
 	background: #222222 url('../images/theme/default/bg-footer.png') repeat-x center top;
-	width: 100%;
 	text-align: center;
 	font-size: 14px;
 	color: #e4e2d2;
 	margin-top: 70px;
+
   position:absolute;
-  bottom:-1px;
+  bottom:0;
+  width:100%;
+  height:130px;
 }
 
 div#footer div.inner {
@@ -413,6 +428,7 @@ img.loaderIcon {
 /* NAVIGATION */
 
 div#navigation {
+  display:inline;
 	float: right;
 	position: relative;
 	top: 33px;
