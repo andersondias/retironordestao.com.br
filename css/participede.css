@@ -1,0 +1,20 @@
+table{ font-size: 12px; width: 480px; text-align: left; border-collapse: collapse; }
+table th{ font-size: 13px; font-weight: normal; padding: 8px; background: #c8cccb;
+                  border-top: 2px solid #EEECDB; border-bottom: 1px solid #EEECDB; color: #575757; }
+table td{ padding: 8px; border-bottom: 1px solid #fff; color: #575757; border-top: 1px solid #fff; background: #faf8ef; }
+table tbody tr:hover td{ background: #f3efe6; color: #575757;} 
+table td.dia { text-align: center; font-weight: bold; }
+
+form.formtastic fieldset ol li.string input {
+  width: 60%
+}
+
+h2.head, caption {display:none;}
+
+#main dt  {float:left;width:200px;}
+.participede .empty {background:none;border:0 none;}
+.participede table {margin-bottom:20px;}
+
+.subscribe_button { padding: 10px;}
+
+#new_attendant legend span {display:none}
