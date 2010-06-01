@@ -2,6 +2,7 @@
 layout: subpage
 title: Inscrição
 subtitle: Marque seu lugar nesse retiro arretado
+javascript_imports: jquery.fancybox-1.3.1.pack new_attendant
 ---
 
 #content
@@ -10,3 +11,11 @@ subtitle: Marque seu lugar nesse retiro arretado
       #participede
 
 %script{:src => 'http://participe.de/events/retiro-nordestao/script.js', :type => 'text/javascript'}
+
+%a(href='#observacoes_popup' id='observacao_link' style='display:none;')
+%div#observacoes_popup
+  %h2 Observacao
+  %ul
+    %li No campo onde está inscrito <strong>Profissão</strong> informe o <strong>Nome do pastor</strong> a quem você está vinculado
+    %li No campo onde está inscrito <strong>Empresa</strong> informe o <strong>Nome do seu discipulador</strong> a quem você está vinculado
+    %li Caso você não possua CPF informe o CPF do responsável por você
